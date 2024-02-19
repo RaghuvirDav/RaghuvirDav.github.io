@@ -1,0 +1,173 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Container styling */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background: #007bff; /* Bootstrap primary blue */
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #0056b3; /* A darker shade of primary blue */
+    outline: none;
+}
+
+/* Header Styles */
+header {
+    background: #333 url('header-bg.jpg') no-repeat center center/cover;
+    height: 80vh; /* Slightly less than full height for a peek of content below */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+    background-color: #fff; /* White background for content */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Bootstrap primary blue for headers */
+}
+
+/* Experience styles */
+.job {
+    margin-bottom: 40px;
+}
+
+.job h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.job ul {
+    list-style: inside square;
+    color: #333;
+}
+
+.job ul li {
+    margin-bottom: 5px;
+}
+
+
+.download-cv {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.section {
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 20px; /* Adds space between contact info and the copyright */
+}
+
+.footer-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: underline; /* Makes it clear that it's a clickable link */
+}
+
+.footer-content a:hover {
+    color: #ddd; /* Lightens the link on hover for visual feedback */
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
