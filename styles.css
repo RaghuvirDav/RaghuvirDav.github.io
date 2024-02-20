@@ -113,19 +113,6 @@ section h2 {
     margin-top: 20px;
 }
 
-.btn {
-    display: inline-block;
-    background: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
 
 .btn:hover {
     background: #0056b3;
@@ -169,5 +156,61 @@ footer {
 .footer-bottom p {
     font-size: 0.8rem;
     margin-top: 10px;
+}
+
+.profile-img {
+  width: 200px; /* adjust as needed */
+  height: auto; /* maintain aspect ratio */
+  border-radius: 50%; /* circular image */
+  object-fit: cover; /* ensures the image covers the area without stretching */
+  border: 3px solid #333; /* optional border */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* centers the image */
+}
+
+
+.about-container {
+  display: flex;
+  flex-direction: row; /* Explicitly set the direction to row */
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.profile-img-container {
+  width: 30%; /* Adjust as necessary */
+  flex: 0 0 25%;
+}
+
+.profile-img {
+  max-width: 100%; /* This will make the image responsive */
+  height: auto; /* This will maintain the aspect ratio of the image */
+  border-radius: 50%; /* Makes the image round */
+}
+
+.about-text {
+  width: 70%; /* Adjust as necessary */
+  padding: 20px;
+}
+
+
+header {
+    background: url('bg_header.jpeg') no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0; /* Position at the top of the header */
+    right: 0; /* Position at the right of the header */
+    bottom: 0; /* Position at the bottom of the header */
+    left: 0; /* Position at the left of the header */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1;
 }
 

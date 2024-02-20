@@ -11,18 +11,29 @@ document.querySelectorAll('nav a').forEach(link => {
 document.querySelector('footer p').textContent = `© ${new Date().getFullYear()} Raghuvir Dav`;
 
 
-// This function hides all sections and then shows the one with the provided ID
+// This function hides all sections except the one with the provided ID
 function showSection(sectionId) {
-    // Hide all sections
+    // Hide all sections except the one with the provided ID
     document.querySelectorAll('.section').forEach(function(section) {
-        section.style.display = 'none';
+        if(section.id !== sectionId) {
+            section.style.display = 'none';
+        }
     });
 
-    // Show the selected section
-    document.getElementById(sectionId).style.display = 'block';
+
+    // Get the element of the section you want to show
+    const sectionToShow = document.getElementById(sectionId);
+
+    // Set the display property accordingly
+    if(sectionId === 'about') {
+        sectionToShow.style.display = 'flex'; // Use 'flex' for the 'about' section
+    } else {
+        sectionToShow.style.display = 'block'; // Use 'block' for other sections
+    }
 }
 
-// Initially hide all sections except 'about'
+
+// Call showSection for 'about' when the window loads
 window.onload = function() {
-    showSection('about'); // Show 'about' section by default
+    showSection('about');
 };
