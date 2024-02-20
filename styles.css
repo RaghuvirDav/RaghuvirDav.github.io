@@ -271,7 +271,7 @@ header p {
     }
     header p {
         font-size: 1rem; /* Smaller font size for mobile */
-        font-size: 6vw;
+        font-size: 3vw;
     }
 }
 
