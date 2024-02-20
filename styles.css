@@ -54,10 +54,10 @@ header {
     background: #333 url('header-bg.jpg') no-repeat center center/cover;
     height: 80vh; /* Slightly less than full height for a peek of content below */
     color: #fff;
-    text-align: center;
+    text-align: left;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+
     flex-direction: column;
 }
 
@@ -201,6 +201,10 @@ header {
     background: url('bg_header.jpeg') no-repeat center center/cover;
     position: relative;
     z-index: 1;
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Add padding to ensure text doesn't touch the edge */
+    padding-top: 25%;
+
 }
 
 header::before {
@@ -236,4 +240,38 @@ header::before {
 
 }
 
+
+/* Header Animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+header h1,
+header p {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    /* Adjust the timing above as needed: duration | easing | delay | iteration count */
+}
+
+/* Responsive Header Text for mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 20px; /* Add more padding on mobile */
+
+    }
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        font-size: 5vw;
+    }
+    header p {
+        font-size: 1rem; /* Smaller font size for mobile */
+        font-size: 3vw;
+    }
+}
 
