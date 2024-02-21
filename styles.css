@@ -356,3 +356,7 @@ header p {
 
     text-align: justify;
 }
+
+.badge-base {
+    padding: 10px;
+}
