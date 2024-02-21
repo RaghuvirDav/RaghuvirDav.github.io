@@ -199,6 +199,7 @@ footer {
 .about-text {
   width: 70%; /* Adjust as necessary */
   padding: 20px;
+  text-align: justify;
 }
 
 
@@ -241,6 +242,7 @@ header::before {
     .about-text {
         width: 100%; /* Allow text to take full width on small screens */
         text-align: center; /* Center-align the text */
+        text-align: justify;
     }
 
 }
@@ -340,3 +342,17 @@ header p {
     transform: translateY(-2px); /* Slightly raises the button */
 }
 
+.about-text p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.about-text h1 {
+    text-align: center;
+}
+
+.experience {
+
+    text-align: justify;
+}
