@@ -150,8 +150,8 @@ footer {
 }
 
 .footer-content a {
-    color: #fff;
-    text-decoration: underline; /* Makes it clear that it's a clickable link */
+    color: none;
+    text-decoration: none; /* Makes it clear that it's a clickable link */
 }
 
 .footer-content a:hover {
@@ -359,4 +359,18 @@ header p {
 
 .badge-base {
     padding: 10px;
+}
+
+.contact-link {
+  margin-right: 10px; /* Adjust as necessary for spacing */
+}
+
+.contact-icon {
+  width: 40px; /* Adjust as necessary for size */
+  height: auto;
+  transition: transform 0.3s ease; /* For a smooth hover effect */
+}
+
+.contact-link:hover .contact-icon {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
