@@ -8,7 +8,7 @@ document.querySelectorAll('nav a').forEach(link => {
 });
 
 // Dynamic Year for Footer
-document.querySelector('footer p').textContent = `© ${new Date().getFullYear()} Raghuvir Dav`;
+//document.querySelector('footer p').textContent = `© ${new Date().getFullYear()} Raghuvir Dav`;
 
 
 // This function hides all sections except the one with the provided ID
