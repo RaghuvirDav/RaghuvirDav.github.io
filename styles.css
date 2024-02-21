@@ -294,3 +294,47 @@ header p {
         padding: 15px;
     }
 }
+
+.btn {
+    /* Existing styles */
+    background: #4CAF50; /* Change button color */
+    transition: background-color 0.3s ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+.btn:hover {
+    background-color: #367C2B; /* Darken the button on hover */
+}
+
+.download-cv {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    text-align: center; /* Center-align the content */
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.download-cv a.btn {
+    background-color: #007bff; /* Your primary color */
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Soft shadow with primary color */
+    transition: all 0.3s ease-in-out;
+    text-decoration: none; /* Removes underline from links */
+    display: inline-block; /* Allows setting padding and margins */
+    margin-top: 10px; /* Adds space above the button */
+}
+
+.download-cv a.btn:hover, .download-cv a.btn:focus {
+    background-color: #0056b3; /* Darker shade on hover/focus */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+    transform: translateY(-2px); /* Slightly raises the button */
+}
+
