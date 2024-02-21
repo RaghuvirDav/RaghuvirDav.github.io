@@ -24,7 +24,7 @@ body, html {
 /* Navbar Styles */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 0;
     background: #007bff; /* Bootstrap primary blue */
@@ -34,6 +34,8 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    padding: 0; /* Ensure there's no default padding affecting the centering */
+    justify-content: center;
 }
 
 nav ul li a {
