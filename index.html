@@ -1,180 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghuvir Dav</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raghuvir Dav — Python · DevOps · Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Raghuvir Dav</h1>
-            <p>Python | DevOps | Security</p>
-        </header>
 
-        <nav>
-            <ul>
-                <li><a href="#" onclick="showSection('about')">About</a></li>
-                <li><a href="#" onclick="showSection('experience')">Experience</a></li>
-<!--                <li><a href="#" onclick="showSection('projects')">Projects</a></li>-->
-<!--                <li><a href="#" onclick="showSection('contact')">Contact</a></li>-->
-                <li><a href="#" onclick="showSection('resume')">Resume</a></li>
-            </ul>
-        </nav>
+  <!-- Background canvas -->
+  <canvas id="bg-canvas"></canvas>
 
-        <section id="about" class="section about-container" style="display: flex;">
-          <div class="profile-img-container">
-            <img id="fallback-image" src="profile_pic.jpeg" alt="Raghuvir Dav" class="profile-img">
-          </div>
-          <div class="about-text">
-            <h2>About Me</h2>
-            <p>A versatile Python Developer with a robust background in DevOps and Security, specializing in cloud technologies, web application development, and data pipeline management. With a proven track record of delivering complex projects in diverse environments, I excel at developing scalable applications, automating workflows, and enhancing system efficiency. My experience spans the financial sector (FinTech), construction sector, cloud infrastructure management, and contributions to social good through technology. AWS certified and committed to continuous learning, I aim to leverage my skills in software development, data analysis and platform engineering to drive innovation and efficiency.</p>
-          </div>
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="raghuvir-dav" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/raghuvir-dav?trk=profile-badge"></a></div>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile-photo-wrap">
+      <div class="profile-photo-placeholder">
+        <img src="./profile.jpeg" alt="Raghuvir Dav" class="profile-img">
 
-        </section>
-
-
-        <section id="experience" class="section">
-            <h2>Professional Background</h2>
-            <div class="job">
-                <h3>Software Engineer- Barclays Bank, London </h3>
-                <p>June 2024 - Present</p>
-                <ul>
-                    <li>Developed an application with FastAPI to orchestrate the management and lifecycle of environments.</li>
-                    <li>Engaged extensively with Environment Support, Testing Teams, Project Leads, and external parties across testing phases, ensuring smooth and timely test environment operations.</li>
-                    <li>Developed and maintained reporting frameworks for monitoring and automating infrastructure.</li>
-                    <li>Maintained high availability of non-production environments by managing proactive monitoring and alerting for infrastructure, minimizing downtime, and enhancing system reliability.</li>
-                    <li>Maintained clear, timely communication with stakeholders to align on progress, direction, and issue resolutions, fostering transparency and accountability.</li>
-                    <li>Worked on Linux and Windows systems with experience in Python, Oracle databases, and MongoDB, providing a strong technical foundation for monitoring, troubleshooting, and development support.</li>
-                    
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Software Engineer (Data Pipeline) - STT (Stop the Traffic), London</h3>
-                <p>December 2023 - May 2024</p>
-                <ul>
-                    <li>Development and maintenance of a sophisticated data pipeline to analyse and process data critical for anti-trafficking initiatives, enhancing the NGO's operational efficiency and impact.</li>
-                    <li>Implement and manage Continuous Integration/Continuous Deployment (CI/CD) pipelines, significantly reducing deployment times and improving code quality.</li>
-                    <li>Utilize Python for developing scalable scripts and applications, improving data processing speed.</li>
-                    <li>Analyzed the usage and updates of Machine Learning models to analyse trends and predict trafficking activities, increasing model accuracy.</li>
-                    <li>Employ IBM Cloud, Docker, Kubernetes and MongoDB to automate and streamline operations, achieving a reduction in operational costs.</li>
-                    <li>Collaborate closely with cross-functional teams to ensure the seamless integration of technology solutions, enhancing team productivity and data analysis capabilities.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Cloud/Python Developer - QTech Analytics, Ahmedabad</h3>
-                <p>January 2022 - September 2022</p>
-                <ul>
-                    <li>Led the development of a Plotly Dash-based web application for Pre trading data analysis, significantly enhancing the decision-making process for financial analysts.</li>
-                    <li>Designed and implemented the system design for application.</li>
-                    <li>Spearheaded the integration of interactive dashboards that enabled real-time data visualization, increasing user engagement using Plotly DASH.</li>
-                    <li>Managed AWS cloud resources, optimizing infrastructure costs through effective use of automation tools such as Terraform and Ansible.</li>
-                    <li>Drove the adoption of DevOps practices, reducing deployment times and improving system reliability.</li>
-                    <li>Collaborated with cross-functional teams to ensure seamless application development, deployment, and management, enhancing team productivity.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>DevOps/Linux Support - MSBC Group, Ahmedabad</h3>
-                <p>April 2021 - December 2021</p>
-                <ul>
-                    <li>Managed AWS resources: EC2, Lambda, RDS, S3, VPCs, ECS, Code Pipeline, ECR, IAM, SNS, Fargate.</li>
-                    <li>Automated infrastructure via Python, Terraform, and Ansible scripts.</li>
-                    <li>Build Jenkins/Git CI/CD pipelines.</li>
-                    <li>Docker & Kubernetes application deployment.</li>
-                    <li>Terraform & CloudFormation for infrastructure-as-code.</li>
-                    <li>Configured AWS CloudWatch, Grafana and Prometheus for automation, alerting and monitoring.</li>
-                    <li>Postgres setup, backup, and recovery tasks.</li>
-                    <li>Application & infrastructure troubleshooting.</li>
-                    <li>Created Lambda functions using Python to automate periodical tasks.</li>
-                    <li>Supported clients with Linux, Windows and MacOS queries.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Python Developer - MSBC Group, Ahmedabad</h3>
-                <p>March 2020 - March 2021</p>
-                <ul>
-                    <li>Worked on the development of a construction management solution using Python, Django, PostgreSQL, and Sandbird API.</li>
-                    <li>Participated in the design, development, and deployment of web-based applications.</li>
-                    <li>Developed and maintained various APIs to facilitate data exchange between different services.</li>
-                    <li>Optimized database queries and implemented indexes to improved application performance.</li>
-                    <li>Participated in code reviews, bug fixing, and testing.</li>
-                    <li>Collaborated with team members to ensure the timely delivery of projects.</li>
-                </ul>
-            </div>
-        </section>
-
-<!--        <section id="projects" class="section">-->
-<!--            <h2>Projects</h2>-->
-<!--            &lt;!&ndash; Project details &ndash;&gt;-->
-<!--        </section>-->
-
-<!--        <section id="contact" class="section">-->
-<!--            <h2>Contact</h2>-->
-<!--            <p>Email: <a href="mailto:davraghuvir9@gmail.com">davraghuvir9@gmail.com</a></p>-->
-<!--            <p>Phone: +44 7436961623</p>-->
-<!--        </section>-->
-        <section id="resume" class="section">
-            <h2>Resume</h2>
-            <div class="download-cv">
-                <p>Explore my professional journey and key accomplishments in my comprehensive CV.</p>
-                <a href="./Raghuvir_Dav_CV.pdf" class="btn" download="Raghuvir_Dav_CV">
-                  <i class="fas fa-download"></i> Download CV
-                </a>
-
-<!--            <a href="./Raghuvir_Dav_CV.pdf" class="btn" download="Raghuvir_Dav_CV">Download CV</a>-->
-        </div>
-        </section>
-
-        <footer>
-            <div class="footer-content">
-                <h2>Contact Me</h2>
-<!--                <p>Email: <a href="mailto:davraghuvir9@gmail.com">davraghuvir9@gmail.com</a></p>-->
-<!--                <p>Phone: +44 7436961623</p>-->
-<!--                <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">-->
-<!--                    <img src="./social/In-White-96.png" alt="LinkedIn" style="height: 40px; width: 40;">-->
-<!--                </a>-->
-<!--                <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">-->
-<!--                    <img src="./social/phone.png" alt="LinkedIn" style="height: 40px; width: 40;">-->
-<!--                </a>-->
-<!--                <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">-->
-<!--                    <img src="./social/email.png" alt="LinkedIn" style="height: 40px; width: 40;">-->
-<!--                </a>-->
-<!--                <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">-->
-<!--                    <img src="./social/github-mark-white.png" alt="LinkedIn" style="height: 40px; width: 40;">-->
-<!--                </a>-->
-
-                <div class="contact-info">
-
-                    <a href="https://www.linkedin.com/in/raghuvir-dav" class="contact-link" target="_blank">
-                    <img src="./social/In-White-96.png" alt="LinkedIn" class="contact-icon">
-                  </a>
-
-                    <a href="tel:+919574477991" class="contact-link">
-                    <img src="./social/phone.png" alt="Phone" class="contact-icon">
-                  </a>
-
-                  <a href="mailto:davraghuvir9@gmail.com" class="contact-link" target="_blank" >
-                    <img src="./social/email.png" alt="Email" class="contact-icon">
-                  </a>
-
-<!--                    <a href="https://github.com/RaghuvirDav" class="contact-link" target="_blank">-->
-<!--                    <img src="./social/github-mark-white.png" alt="LinkedIn" class="contact-icon">-->
-<!--                  </a>-->
-                </div>
-
-
-            </div>
-            <div class="footer-bottom">
-                <p>Raghuvir Dav.</p>
-            </div>
-        </footer>
-
-
+        <div class="photo-corner tl"></div>
+        <div class="photo-corner tr"></div>
+        <div class="photo-corner bl"></div>
+        <div class="photo-corner br"></div>
+      </div>
     </div>
-    <script src="script.js"></script>
+
+    <div class="sidebar-name">
+      <p class="sidebar-label">CURRICULUM VITAE</p>
+      <h1>Raghuvir<br><em>Dav</em></h1>
+      <p class="sidebar-role">Python · DevOps · Security</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#about" class="nav-item active" data-section="about">About</a>
+      <a href="#skills" class="nav-item" data-section="skills">Skills</a>
+      <a href="#experience" class="nav-item" data-section="experience">Experience</a>
+      <a href="#education" class="nav-item" data-section="education">Education</a>
+      <a href="#certifications" class="nav-item" data-section="certifications">Certifications</a>
+    </nav>
+
+    <div class="sidebar-contact">
+      <a href="tel:+919574477991" class="contact-item">
+        <span class="ci-icon">☎</span>
+        <span>+91 957 447 7991</span>
+      </a>
+      <a href="mailto:davraghuvir9@gmail.com" class="contact-item">
+        <span class="ci-icon">✉</span>
+        <span>davraghuvir9@gmail.com</span>
+      </a>
+      <a href="https://raghuvir.cv" target="_blank" class="contact-item">
+        <span class="ci-icon">⬡</span>
+        <span>raghuvir.cv</span>
+      </a>
+      <a href="https://www.linkedin.com/in/raghuvir-dav" target="_blank" class="contact-item">
+        <span class="ci-icon">in</span>
+        <span>linkedin.com/in/raghuvir-dav</span>
+      </a>
+      <p class="contact-item location">
+        <span class="ci-icon">◈</span>
+        <span>London / India</span>
+      </p>
+    </div>
+
+    <button class="download-btn" id="downloadBtn" onclick="downloadCV()">
+      <span class="dl-icon">↓</span>
+      <span>Download CV</span>
+    </button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- About -->
+    <section id="about" class="section reveal">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2>About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="about-text">
+        A versatile Python Developer with a robust background in DevOps and Security, specialising in cloud technologies, web application development, and data pipeline management. With a proven track record of delivering complex projects in diverse environments, I excel at developing scalable applications, automating workflows, and enhancing system efficiency.
+      </p>
+      <p class="about-text">
+        My experience spans the <span class="highlight">financial sector (FinTech)</span>, <span class="highlight">construction sector</span>, cloud infrastructure management, and contributions to social good through technology. AWS‑certified and committed to continuous learning, I leverage my skills in software development, data analysis, and platform engineering to drive innovation and efficiency.
+      </p>
+
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-number">4+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2</span>
+          <span class="stat-label">Countries Worked</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2</span>
+          <span class="stat-label">AWS Certifications</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Roles Delivered</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section reveal">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2>Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Programming</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Django</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Plotly DASH</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">AngularJS</span>
+            <span class="tag">HTML / CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">DevOps & Cloud</h3>
+          <div class="skill-tags">
+            <span class="tag">AWS</span>
+            <span class="tag">IBM Cloud</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Kafka</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Databases</h3>
+          <div class="skill-tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Oracle</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Data & Monitoring</h3>
+          <div class="skill-tags">
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">CloudWatch</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Platforms & OS</h3>
+          <div class="skill-tags">
+            <span class="tag">Linux</span>
+            <span class="tag">Windows</span>
+            <span class="tag">MacOS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Methodology</h3>
+          <div class="skill-tags">
+            <span class="tag">Agile / SCRUM</span>
+            <span class="tag">Jira</span>
+            <span class="tag">Code Review</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section reveal">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2>Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="tl-date">June 2024 — Present</span>
+            <span class="tl-badge current">Current</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="tl-role">Software Engineer</h3>
+                <p class="tl-company">Barclays Bank <span class="tl-location">· London, UK</span></p>
+              </div>
+              <div class="tl-logo-placeholder">BB</div>
+            </div>
+            <ul class="tl-list">
+              <li>Developed an application with <strong>FastAPI</strong> to orchestrate the management and lifecycle of environments.</li>
+              <li>Engaged extensively with Environment Support, Testing Teams, Project Leads, and external parties across testing phases, ensuring smooth and timely test environment operations.</li>
+              <li>Developed and maintained reporting frameworks for monitoring and automating infrastructure.</li>
+              <li>Maintained high availability of non-production environments through proactive monitoring and alerting, minimising downtime and enhancing system reliability.</li>
+              <li>Maintained clear, timely communication with stakeholders to align on progress, direction, and issue resolutions.</li>
+              <li>Worked on <strong>Linux</strong> and <strong>Windows</strong> systems with Python, Oracle databases, and MongoDB.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="tl-date">Dec 2023 — May 2024</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="tl-role">Software Engineer — Data Pipeline</h3>
+                <p class="tl-company">STT (Stop the Traffic) <span class="tl-location">· London, UK</span></p>
+              </div>
+              <div class="tl-logo-placeholder">STT</div>
+            </div>
+            <ul class="tl-list">
+              <li>Developed and maintained a sophisticated data pipeline to analyse and process data critical for <strong>anti-trafficking initiatives</strong>.</li>
+              <li>Implemented and managed <strong>CI/CD pipelines</strong>, significantly reducing deployment times and improving code quality.</li>
+              <li>Utilised Python for developing scalable scripts and applications, improving data processing speed.</li>
+              <li>Oversaw usage and updates of <strong>Machine Learning models</strong> to analyse trends and predict trafficking activities, increasing model accuracy.</li>
+              <li>Employed <strong>IBM Cloud, Docker, Kubernetes, and MongoDB</strong> to automate and streamline operations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="tl-date">Jan 2022 — Sep 2022</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="tl-role">Cloud / Python Developer</h3>
+                <p class="tl-company">QTech Analytics <span class="tl-location">· Ahmedabad, India</span></p>
+              </div>
+              <div class="tl-logo-placeholder">QT</div>
+            </div>
+            <ul class="tl-list">
+              <li>Led development of a <strong>Plotly Dash-based</strong> web application for pre-trading data analysis, enhancing decision-making for financial analysts.</li>
+              <li>Designed and implemented the full system architecture for the application.</li>
+              <li>Spearheaded integration of interactive dashboards enabling real-time data visualisation.</li>
+              <li>Managed <strong>AWS cloud resources</strong>, optimising infrastructure costs via Terraform and Ansible.</li>
+              <li>Drove adoption of DevOps practices, reducing deployment times and improving system reliability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="tl-date">Apr 2021 — Dec 2021</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="tl-role">DevOps / Linux Support Engineer</h3>
+                <p class="tl-company">MSBC Group <span class="tl-location">· Ahmedabad, India</span></p>
+              </div>
+              <div class="tl-logo-placeholder">MS</div>
+            </div>
+            <ul class="tl-list">
+              <li>Managed AWS resources: <strong>EC2, Lambda, RDS, S3, VPCs, ECS, ECR, IAM, SNS, Fargate</strong>.</li>
+              <li>Automated infrastructure via Python, Terraform, and Ansible scripts.</li>
+              <li>Built Jenkins/Git CI/CD pipelines and deployed applications with Docker &amp; Kubernetes.</li>
+              <li>Configured <strong>CloudWatch, Grafana, and Prometheus</strong> for alerting and monitoring.</li>
+              <li>Created Lambda functions in Python to automate periodical tasks.</li>
+              <li>Supported clients on Linux, Windows, and MacOS queries.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="tl-date">Mar 2020 — Mar 2021</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="tl-role">Python Developer</h3>
+                <p class="tl-company">MSBC Group <span class="tl-location">· Ahmedabad, India</span></p>
+              </div>
+              <div class="tl-logo-placeholder">MS</div>
+            </div>
+            <ul class="tl-list">
+              <li>Developed a construction management solution using <strong>Python, Django, PostgreSQL</strong>, and Sandbird API.</li>
+              <li>Participated in design, development, and deployment of web-based applications.</li>
+              <li>Developed and maintained APIs to facilitate data exchange between services.</li>
+              <li>Optimised database queries and implemented indexes to improve application performance.</li>
+              <li>Participated in code reviews, bug fixing, and testing.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section reveal">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2>Education</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">◈</div>
+          <div class="edu-content">
+            <p class="edu-degree">MSc. Cyber Security</p>
+            <p class="edu-school">University of West London</p>
+            <p class="edu-date">September 2022 — September 2023</p>
+            <p class="edu-location">London, United Kingdom</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">◈</div>
+          <div class="edu-content">
+            <p class="edu-degree">Bachelor of Engineering</p>
+            <p class="edu-school-sub">Computer Engineering</p>
+            <p class="edu-school">Gujarat Technological University</p>
+            <p class="edu-date">August 2016 — August 2020</p>
+            <p class="edu-location">Ahmedabad, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section reveal">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2>Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-badge">AWS</div>
+          <div class="cert-info">
+            <p class="cert-name">AWS DevOps Engineer</p>
+            <p class="cert-level">Professional</p>
+          </div>
+          <div class="cert-check">✓</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge">AWS</div>
+          <div class="cert-info">
+            <p class="cert-name">AWS Developer</p>
+            <p class="cert-level">Associate</p>
+          </div>
+          <div class="cert-check">✓</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="cv-footer">
+      <p>References available upon request &nbsp;·&nbsp; <a href="mailto:davraghuvir9@gmail.com">davraghuvir9@gmail.com</a></p>
+      <button class="download-btn-footer" onclick="downloadCV()">
+        <span class="dl-icon">↓</span> Download Full CV (PDF)
+      </button>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
